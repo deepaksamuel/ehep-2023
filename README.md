@@ -76,7 +76,7 @@ The first three steps are generic whenever you compile from sources (you will do
 
 The fourth step is where you choose additional options for your root installation. If you scroll down you will see options like ```pyroot``` and ```roofit``` which you should enable as they will be used in the school.
 
-The fifth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
+The fifth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. The default option is ```use default native compilers``` with ```Unix Makefiles``` in the dropdown. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
 
 The final step is clicking on the ```Generate`` button. Once again, you may have to check for any errors reported at this stage.
 
@@ -113,7 +113,7 @@ The fifth step is where you choose additional options for your Geant4 installati
 
 IMPORTANT: Please uncheck the ```GEANT4_INSTALL_DATA``` or else the datasets will be automatically downloaded again
 
-The sixth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
+The sixth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on.  The default option is ```use default native compilers``` with ```Unix Makefiles``` in the dropdown. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
 
 The sevent step is clicking on the ```Generate`` button. Once again, you may have to check for any errors reported at this stage.
 
