@@ -104,6 +104,7 @@ You should see the ROOT command prompt coming up.
 
 ![Alt text](https://github.com/deepaksamuel/ehep-2023/blob/fa33b5dec029ec533230b8dcfe6c1854e520084f/img/root-prompt.png "a title")
 
+You must source thisroot.sh every time you open a new terminal. In case you intend to use ROOT frequently, this may be inconvenient. You should instead add this line to your bash.rc file.
 
 
 ## Instructions for installing Geant4
