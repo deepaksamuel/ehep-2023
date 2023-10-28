@@ -52,7 +52,7 @@ For the sake of this preschool, we propose to use this folder structure:
 ## Easy install script
 
 I have written a script which will do all of the above in one go, the script named ```ehep.sh``` is found in this repository, you can download it on your Desktop:
-
-<a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh?token=GHSAT0AAAAAACIYOSDP5Y22GDYMMLI7HAOUZJ47Y3A">Right click and save link as ehep.sh on your Desktop</a>
+https://github.com/deepaksamuel/ehep-2023/blob/main/ehep.sh
+<a id="raw-url" href="[https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh?token=GHSAT0AAAAAACIYOSDP5Y22GDYMMLI7HAOUZJ47Y3A](https://github.com/deepaksamuel/ehep-2023/blob/main/ehep.sh)">Right click and save link as ehep.sh on your Desktop</a>
 
 Once saved, on your terminal execute the command ```source ehep.sh```
