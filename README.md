@@ -49,10 +49,45 @@ For the sake of this preschool, we propose to use this folder structure:
     - `build`
     - `install`
 
-## Easy install script
+## Easy download script
 
 I have written a script which will do all of the above in one go, the script named ```ehep.sh``` is found in this repository, you can download it on your Desktop:
 
 <a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh">Right click and save link as ehep.sh on your Desktop</a>
 
 Once saved, on your terminal execute the command ```source ehep.sh```
+
+Please note that this script will also download the Geant4 datasets which may be extremely time consuming. However, as soon as the datasets downloading begins, parallely you can compile other codes. 
+
+Do not close the terminal in which the ehep.sh script is running. Open a new terminal for parallely compiling the other programmes.
+
+## Instructions for installing ROOT
+### Invoking CMake
+Most often, softwares used in HEP are distributed as source codes than binaries. In such a case, you will have to use CMake to generate your build files and then compile your code to generate the binary.
+There is a command line way to work with CMake but just to make things easier, we will use the cmake gui.
+You can call the gui by typing ```cmake3-gui``` on the terminal.
+
+![Alt text](https://github.com/deepaksamuel/ehep-2023/blob/5813fbfefa253839e4fb65a8f2e34fe0c221aa1b/img/cmake-root.png "a title")
+
+The first three steps are generic whenever you compile from sources (you will do the same for Geant4 as well).
+  1. Choosing the location where your source code resides: The easy download script places the source code in the root folder
+  2. Choosing the location for your build files: The build folder inside root folder is used for this purpose
+  3. Choosing the location for your install files: The install folder inside root folder is used for this purpose
+
+The fourth step is where you choose additional options for your root installation. If you scroll down you will see options like ```pyroot``` and ```roofit``` which you should enable as they will be used in the school.
+
+The fifth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
+
+The final step is clicking on the ```Generate`` button. Once again, you may have to check for any errors reported at this stage.
+
+### Compiling the code
+Now that the build files are created, you are now ready to compile your code.
+
+- On a terminal window, cd to ```build``` folder inside ```ehep/root```
+
+- type ```make -j4``` to begin compiling
+
+- wait for 30 - 45 minutes 
+
+
+
