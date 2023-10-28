@@ -91,6 +91,20 @@ Now that the build files are created, you are now ready to compile your code.
   
 - If the compiling is successful, type ```make install```  
 
+### Running ROOT
+If everything is done, you should be able to run ROOT. For this, on a terminal cd to  ```ehep/root/install/bin``` and type:
+
+```source thisroot.sh```
+
+Then type, 
+
+```root```
+
+You should see the ROOT command prompt coming up.
+
+![Alt text](https://github.com/deepaksamuel/ehep-2023/blob/fa33b5dec029ec533230b8dcfe6c1854e520084f/img/root-prompt.png "a title")
+
+
 
 ## Instructions for installing Geant4
 ### Invoking CMake
@@ -128,16 +142,6 @@ Now that the build files are created, you are now ready to compile your code.
   
 - If the compiling is successful, type ```make install```  
 
-### Running ROOT
-If everything is done, you should be able to run ROOT. For this, on a terminal cd to  ```ehep/root/install/bin``` and type:
-
-```source thisroot.sh```
-
-Then type, 
-
-```root```
-
-You should see the ROOT command prompt coming up.
 
 
 
