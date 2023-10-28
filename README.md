@@ -55,4 +55,4 @@ I have written a script which will do all of the above in one go, the script nam
 
 [https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh/append?raw=true ](https://github.com/deepaksamuel/ehep-2023/raw/main/ehep.sh)https://github.com/deepaksamuel/ehep-2023/raw/main/ehep.sh
 
-<a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh/append?raw=true">Download FILE</a>
+<a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh?token=GHSAT0AAAAAACIYOSDP5Y22GDYMMLI7HAOUZJ47Y3A">Download FILE</a>
