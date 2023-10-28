@@ -11,7 +11,7 @@ Installation notes for ROOT and Geant4
 | Git      | Direct install (~ 20 MB)                                                                                                                                                            | ```sudo snap install git-ubuntu --classic```                                                      |
 | CMake    | Direct Install (~ 5 MB)                                                                                                                                                             | ```sudo snap install cmake --classic```                                                           |
 | ROOT     | https://root.cern/download/root_v6.28.06.source.tar.gz (~200 MB)                                                                                                                    | To be discussed, refer to https://root.cern/install/ for requirements for your system             |
-| Geant4   | https://gitlab.cern.ch/geant4/geant4/-/archive/v11.1.2/geant4-v11.1.2.tar.gz (~450 MB)<br>Datasets to be downloaded separately from https://geant4.web.cern.ch/download/11.1.2.html | To be discussed …                                                                                 |
+| Geant4   | https://gitlab.cern.ch/geant4/geant4/-/archive/v11.1.2/geant4-v11.1.2.tar.gz (~450 MB) | To be discussed …                                                                                 |
 
 ## Geant4 datasets
 
