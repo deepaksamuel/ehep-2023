@@ -53,4 +53,4 @@ For the sake of this preschool, we propose to use this folder structure:
 
 I have written a script which will do all of the above in one go, the script named ```ehep.sh``` is found in this repository, you can download it on your Desktop:
 
-https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh/append?raw=true 
+[https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh/append?raw=true ](https://github.com/deepaksamuel/ehep-2023/raw/main/ehep.sh)https://github.com/deepaksamuel/ehep-2023/raw/main/ehep.sh
