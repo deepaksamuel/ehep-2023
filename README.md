@@ -50,7 +50,7 @@ For the sake of this preschool, we propose to use this folder structure:
     - `install`
 
 ## Easy install script
-https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh
+
 I have written a script which will do all of the above in one go, the script named ```ehep.sh``` is found in this repository, you can download it on your Desktop:
 
 <a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh">Right click and save link as ehep.sh on your Desktop</a>
