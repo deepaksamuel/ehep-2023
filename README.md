@@ -21,6 +21,20 @@ Go to: https://geant4.web.cern.ch/download/11.1.2.html
 
 Download all the datasets therein into the ‘data’ folder inside g4
 
+## Dependencies
+To install the dependencies, use the following commands
+- ROOT
+  - ```sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev```
+  - ```sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev```
+- Geant4
+  - GDML: ```sudo apt-get install -y libxerces-c-dev```
+  - libXMu: ```sudo apt-get install -y libxmu-dev```
+  - Qt:
+       - ```sudo apt-get install qtbase5-dev```
+       - ```sudo apt-get install qtdeclarative5-dev```
+  - OpenSSL: ```sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5``` 
+   
+
 ## Folder structure
 
 For the sake of this preschool, we propose to use this folder structure:
@@ -35,3 +49,8 @@ For the sake of this preschool, we propose to use this folder structure:
     - `build`
     - `install`
     - `data`    
+
+## Easy install script
+
+I have written a script which will do all of the above in one go, the script named ```ehep.sh``` is found in this repository, you can download it on your Desktop:
+https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh?token=GHSAT0AAAAAACIYOSDOACG5EFPVOD43HUYUZJ47KQQ
