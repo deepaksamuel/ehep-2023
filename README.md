@@ -92,4 +92,40 @@ Now that the build files are created, you are now ready to compile your code.
 - If the compiling is successful, type ```make install```  
 
 
+## Instructions for installing Geant4
+### Invoking CMake
+We will follow the same instructions as used for root installation
+Call ```cmake3-gui``` on the terminal.
+
+![Alt text](https://github.com/deepaksamuel/ehep-2023/blob/f03ca7dd115b7b0ec88615d4a02792cf86207044/img/cmake-geant4.png "a title")
+
+The steps are as follows:
+  1. Set the source location
+  2. Set the location for your build files: The build folder inside g4 folder is used for this purpose
+  3. Set the location  for your install files: The install folder inside g4 folder is used for this purpose
+  4. Set the location for the data files: The data folder inside g4 folder is used for this purpose
+
+The fifth step is where you choose additional options for your Geant4 installation. Please make sure that the following options are checked:
+- GEANT4_BUILD_MULTITHREADED
+- GEANT4_USE_GDML
+- GEANT4_USE_OPENGL_X11
+- GEANT4_USE_QT
+
+IMPORTANT: Please uncheck the ```GEANT4_INSTALL_DATA``` or else the datasets will be automatically downloaded again
+
+The sixth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
+
+The sevent step is clicking on the ```Generate`` button. Once again, you may have to check for any errors reported at this stage.
+
+### Compiling the code
+Now that the build files are created, you are now ready to compile your code.
+
+- On a terminal window, cd to ```build``` folder inside ```ehep/g4```
+
+- type ```make -j4``` to begin compiling
+
+- wait for 45 - 60 minutes
+  
+- If the compiling is successful, type ```make install```  
+
 
