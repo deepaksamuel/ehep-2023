@@ -87,7 +87,9 @@ Now that the build files are created, you are now ready to compile your code.
 
 - type ```make -j4``` to begin compiling
 
-- wait for 30 - 45 minutes 
+- wait for 30 - 45 minutes
+  
+- If the compiling is successful, type ```make install```  
 
 
 
