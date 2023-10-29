@@ -126,3 +126,36 @@ wget -nc https://cern.ch/geant4-data/datasets/G4TENDL.1.4.tar.gz
 tar -xvzf G4TENDL.1.4.tar.gz
 mv G4TENDL1.4 ../$geant4Folder/data
 echo 'downloaded 12/12 geant4 datasets...'
+
+# Enable these to install root and geant4 automatically
+
+# echo 'installing root'
+# cd ../root/build
+# cmake -DCMAKE_INSTALL_PREFIX=../install ../root-6.28.06/ -Dpyroot=ON -Drootfit=ON -DPython3_EXECUTABLE=/home/codespace/anaconda3/bin/python
+# make -j4
+# make install
+# source ../install/bin/thisroot.sh
+
+# echo 'installing geant4'
+# cd ../../g4/build
+# cmake -DCMAKE_INSTALL_PREFIX=../install ../geant4-v11.1.2/ -DGEANT4_USE_GDML=ON -DGEANT4_INSTALL_DATADIR=../data -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_QT=ON
+# make -j4
+# make install
+# source ../install/bin/geant4.sh
+
+# enable for conda installs for ehep-2023
+# conda install -c anaconda jupyter
+# conda install -c conda-forge jupyter-lsp
+# conda install -c conda-forge nbdime
+# conda install -c conda-forge jupyterlab-git
+# conda install -c conda-forge scikit-learn
+# conda install -c conda-forge seaborn
+# conda install -c conda-forge tensorflow
+# conda install -c conda-forge keras
+# conda install -c pytorch pytorch
+# conda install -c conda-forge dask
+# conda install -c conda-forge libxgboost
+# conda install -c conda-forge qutip
+# conda install -c conda-forge qiskit-terra
+# conda install -c conda-forge qiskit-metal
+
