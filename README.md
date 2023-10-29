@@ -1,5 +1,8 @@
 # ehep-2023
-Installation notes for ROOT and Geant4
+**Installation notes for ROOT and Geant4**
+
+Deepak Samuel, Central University of Karnataka
+
 To view these slides as html slide:
 
 Go to: https://htmlpreview.github.io/?https://github.com/deepaksamuel/ehep-2023/blob/main/installation-slides.html
@@ -26,9 +29,12 @@ Download all the datasets therein into the ‘data’ folder inside g4
 
 ## Dependencies
 To install the dependencies, use the following commands
+      
 - ROOT
-  - ```sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev```
-  - ```sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev```
+  
+    ```sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev```
+  
+    ```sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev```
 - Geant4
   - GDML: ```sudo apt-get install -y libxerces-c-dev```
   - libXMu: ```sudo apt-get install -y libxmu-dev```
