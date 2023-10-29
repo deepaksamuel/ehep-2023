@@ -2,7 +2,7 @@
 Installation notes for ROOT and Geant4
 To view these slides as html slide:
 
-https://htmlpreview.github.io/?https%3A%2F%2Fgithub.com%2Fdeepaksamuel%2Fehep-2023%2Fblob%2Fmain%2Finstallation-slides.html=#12
+Go to: https://htmlpreview.github.io/?https://github.com/deepaksamuel/ehep-2023/blob/main/installation-slides.html
 
 ## Download links
 
