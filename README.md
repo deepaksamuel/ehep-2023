@@ -32,8 +32,8 @@ To install the dependencies, use the following commands
   - Qt:
        - ```sudo apt-get install qtbase5-dev```
        - ```sudo apt-get install qtdeclarative5-dev```
-  - OpenSSL: ```sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5``` 
-   
+  - OpenSSL: ```sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5```
+  - 
 
 ## Folder structure
 
@@ -69,6 +69,27 @@ Please invoke these commands from the terminal after ```cd``` ing to the locatio
 -  ```./Anaconda3-2023.07-2-Linux-x86_64.sh```
 
 Please watch out for these screens:
+ 
+![Alt text](https://github.com/deepaksamuel/ehep-2023/blob/dc87bb87b6e36d6f3d652b396141911e06aaeb31/img/anaconda-installation.png  "a title")
+
+### Python libraries required for EHEP 2023 can be installed using conda or pip. The commands for conda are given below:
+
+- conda install -c anaconda jupyter
+- conda install -c conda-forge jupyter-lsp
+- conda install -c conda-forge nbdime
+- conda install -c conda-forge jupyterlab-git
+- conda install -c conda-forge scikit-learn
+- conda install -c conda-forge seaborn
+- conda install -c conda-forge tensorflow
+- conda install -c conda-forge keras
+- conda install -c pytorch pytorch
+- conda install -c conda-forge dask
+- conda install -c conda-forge libxgboost
+- conda install -c conda-forge qutip
+- conda install -c conda-forge qiskit-terra
+- conda install -c conda-forge qiskit-metal
+
+### Important: Do not mix pip install and conda install as they will result in conflicts. 
 
 
 ## Instructions for installing ROOT
@@ -134,7 +155,7 @@ You must source thisroot.sh every time you open a new terminal. In case you inte
 - Other ways to install: https://root.cern/install/
 
 ## Instructions for installing Geant4
-### Invoking CMake
+### Invoking CMake-GUI
 We will follow the same instructions as used for root installation
 Call ```cmake3-gui``` on the terminal.
 
@@ -157,6 +178,10 @@ IMPORTANT: Please uncheck the ```GEANT4_INSTALL_DATA``` or else the datasets wil
 The sixth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on.  The default option is ```use default native compilers``` with ```Unix Makefiles``` in the dropdown. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
 
 The sevent step is clicking on the ```Generate``` button. Once again, you may have to check for any errors reported at this stage.
+
+### Compiling Geant4 using CMake command line
+
+- ```cmake -DCMAKE_INSTALL_PREFIX=../install ../geant4-v11.1.2/ -DGEANT4_USE_GDML=ON -DGEANT4_INSTALL_DATADIR=../data -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_QT=ON```
 
 ### Compiling the code
 Now that the build files are created, you are now ready to compile your code.
