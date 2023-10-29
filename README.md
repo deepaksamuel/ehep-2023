@@ -61,8 +61,18 @@ Please note that this script will also download the Geant4 datasets which may be
 
 Do not close the terminal in which the ehep.sh script is running. Open a new terminal for parallely compiling the other programmes.
 
+## Instructions for installing Anaconda
+Please invoke these commands from the terminal after ```cd``` ing to the location where the binary was downloaded: 
+
+- ```cd ehep/downloads```
+-  ```chmod +x Anaconda3-2023.07-2-Linux-x86_64.sh```
+-  ```./Anaconda3-2023.07-2-Linux-x86_64.sh```
+
+Please watch out for these screens:
+
+
 ## Instructions for installing ROOT
-### Invoking CMake
+### Invoking CMake-GUI
 Most often, softwares used in HEP are distributed as source codes than binaries. In such a case, you will have to use CMake to generate your build files and then compile your code to generate the binary.
 There is a command line way to work with CMake but just to make things easier, we will use the cmake gui.
 You can call the gui by typing ```cmake3-gui``` on the terminal.
@@ -74,11 +84,24 @@ The first three steps are generic whenever you compile from sources (you will do
   2. Choosing the location for your build files: The build folder inside root folder is used for this purpose
   3. Choosing the location for your install files: The install folder inside root folder is used for this purpose
 
-The fourth step is where you choose additional options for your root installation. If you scroll down you will see options like ```pyroot``` and ```roofit``` which you should enable as they will be used in the school.
+The fourth step is where you choose additional options for your root installation. If you scroll down you will see options like ```pyroot``` and ```roofit``` which you should enable as they will be used in the school. 
+
+### Important:
+It is often the case that the python installed by Anaconda distribution conflicts with your many other python distributions on your computer. If you want your ROOT to be compiled with the python from Anaconda distribution, you may have to set the CMake variable appropriately. For example, I have set ```CMAKE_INSTALL_PYTHONDIR``` to ```/home/samuel/anaconda3/bin/python```.
 
 The fifth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. The default option is ```use default native compilers``` with ```Unix Makefiles``` in the dropdown. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
 
 The final step is clicking on the ```Generate``` button. Once again, you may have to check for any errors reported at this stage.
+
+### Using CMake command line
+If you want know how to invoke cmake steps that you did in the earlier step using GUI, using the command line, here it is:
+First cd to the build folder inside root directory:
+
+  - ```cd ehep/root/build```
+and then
+- ```cmake -DCMAKE_INSTALL_PREFIX=../install ../root-6.28.06/ -Dpyroot=ON -Drootfit=ON -DPython3_EXECUTABLE=/home/codespace/anaconda3/bin/python```
+
+Note that the above step has to be done only if you are not using the Cmake-Gui. 
 
 ### Compiling the code
 Now that the build files are created, you are now ready to compile your code.
@@ -106,6 +129,9 @@ You should see the ROOT command prompt coming up.
 
 You must source thisroot.sh every time you open a new terminal. In case you intend to use ROOT frequently, this may be inconvenient. You should instead add this line to your bash.rc file.
 
+### Other ways to install / run ROOT
+- To know more about build ROOT from source and other options, please go to: https://root.cern/install/build_from_source/
+- Other ways to install: https://root.cern/install/
 
 ## Instructions for installing Geant4
 ### Invoking CMake
@@ -144,5 +170,17 @@ Now that the build files are created, you are now ready to compile your code.
 - If the compiling is successful, type ```make install```  
 
 
+### Setting the Geant4 environment
+Every time you run a Geant4 code, you must source this script ```geant4.sh``` will is found in the ```ehep/g4/install/bin folder```
+
+- ```source ehep/g4/install/bin/geant4.sh```
+
+failing which, you will not be able to compile the code successfully. If you are frequently developing Geant4 code, it is best to source this in your .bashrc file.
+
+### More compile options for Geant4
+
+Please go to this link for more build options in Geant4: 
+
+- https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/installguide.html#geant4-build-options
 
 
