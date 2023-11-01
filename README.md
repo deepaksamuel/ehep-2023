@@ -3,9 +3,15 @@
 
 Deepak Samuel, Central University of Karnataka
 
-To view these slides as html slide:
+To view these slides as html presentations:
 
-Go to: https://htmlpreview.github.io/?https://github.com/deepaksamuel/ehep-2023/blob/main/installation-slides.html
+Go to: 
+
+      https://htmlpreview.github.io/?https://github.com/deepaksamuel/ehep-2023/blob/main/installation-slides.html
+
+The video lectures are found at:
+      
+      https://www.youtube.com/playlist?list=PLmgzo3mGMNquu4Q18v0MJ4IjJ5PSI0XgX
 
 ## Download links
 
@@ -23,7 +29,9 @@ Go to: https://htmlpreview.github.io/?https://github.com/deepaksamuel/ehep-2023/
 
 For Geant4 simulations to run, you need to download the datasets on to your computer:
 
-Go to: https://geant4.web.cern.ch/download/11.1.2.html
+Go to: 
+
+      https://geant4.web.cern.ch/download/11.1.2.html
 
 Download all the datasets therein into the ‘data’ folder inside g4
 
@@ -31,18 +39,22 @@ Download all the datasets therein into the ‘data’ folder inside g4
 To install the dependencies, use the following commands
       
 - ROOT
-  
-    ```sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev```
-  
-    ```sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev```
+- 
+  -     sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev
+-
+  -        sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev libxmu-dev libxft-dev libssl-dev
+   
 - Geant4
-  - GDML: ```sudo apt-get install -y libxerces-c-dev```
-  - libXMu: ```sudo apt-get install -y libxmu-dev```
+  - GDML:
+  -       sudo apt-get install -y libxerces-c-dev
+  - libXMu:
+  -       sudo apt-get install -y libxmu-dev
   - Qt:
-       - ```sudo apt-get install qtbase5-dev```
-       - ```sudo apt-get install qtdeclarative5-dev```
-  - OpenSSL: ```sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5```
-  - 
+  -       sudo apt-get install qtbase5-dev
+  -       sudo apt-get install qtdeclarative5-dev
+  - OpenSSL: s
+  -       sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5
+  
 
 ## Folder structure
 
@@ -64,7 +76,9 @@ I have written a script which will do all of the above in one go, the script nam
 
 <a id="raw-url" href="https://raw.githubusercontent.com/deepaksamuel/ehep-2023/main/ehep.sh">Right click and save link as ehep.sh on your Desktop</a>
 
-Once saved, on your terminal execute the command ```source ehep.sh```
+Once saved, on your terminal execute the command 
+            
+      source ehep.sh
 
 Please note that this script will also download the Geant4 datasets which may be extremely time consuming. However, as soon as the datasets downloading begins, parallely you can compile other codes. 
 
