@@ -50,7 +50,7 @@ mv geant4-v11.1.2 ../$geant4Folder/
 echo 'done...'
 
 echo 'installing root dependencies...'
-yes | sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev
+yes | sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxft-dev libxext-dev python libssl-dev libssl-dev
 yes | sudo apt-get install gfortran libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev python-numpy libxml2-dev libkrb5-dev libgsl0-dev qtwebengine5-dev
 echo 'done installing root dependencies...'
 
