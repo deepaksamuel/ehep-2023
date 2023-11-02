@@ -173,6 +173,15 @@ You should see the ROOT command prompt coming up.
 
 You must source thisroot.sh every time you open a new terminal. In case you intend to use ROOT frequently, this may be inconvenient. You should instead add this line to your bash.rc file.
 
+### Running a ROOT Jupyter notebook:
+First make sure that the thisroo.sh script is sourced and execute the following command from the terminal:
+
+      root --notebook --no-browser
+
+This command will output a url which you can copy and paste it on a browser to start a jupyter notebook for root scripts. Alternatively, you can also start a Jupyter notebook inside VSCode.
+
+There are two types of ROOT scripts: the python-based and C++ interpreter based. For the python based script, you should choose the ipykernel and for C++ scripts, you should choose the ROOT C++ kernel, in the Jupyter notebook. 
+
 ### Other ways to install / run ROOT
 - To know more about build ROOT from source and other options, please go to: https://root.cern/install/build_from_source/
 - Other ways to install: https://root.cern/install/
