@@ -131,7 +131,7 @@ The first three steps are generic whenever you compile from sources (you will do
 The fourth step is where you choose additional options for your root installation. If you scroll down you will see options like ```pyroot``` and ```roofit``` which you should enable as they will be used in the school. 
 
 ### Important:
-It is often the case that the python installed by Anaconda distribution conflicts with your many other python distributions on your computer. If you want your ROOT to be compiled with the python from Anaconda distribution, you may have to set the CMake variable appropriately. For example, I have set ```CMAKE_INSTALL_PYTHONDIR``` to ```/home/samuel/anaconda3/bin/python```.
+It is often the case that the python installed by Anaconda distribution conflicts with your many other python distributions on your computer. If you want your ROOT to be compiled with the python from Anaconda distribution, you may have to set the CMake variable appropriately. For example, I have set ```CMAKE_INSTALL_PYTHONDIR``` to ```/home/samuel/anaconda3/bin/```.
 
 The fifth step is clicking on the ```configure``` button which leads you to another popup asking you to choose the compiler and so on. The default option is ```use default native compilers``` with ```Unix Makefiles``` in the dropdown. Unless you know what you are doing, accept the defaults. If you see no erros reported in the log, you can go on to the next step. In case of errors, you may have to install additional dependencies reported therein. 
 
