@@ -181,6 +181,7 @@ First make sure that the thisroo.sh script is sourced and execute the following 
 This command will output a url which you can copy and paste it on a browser to start a jupyter notebook for root scripts. Alternatively, you can also start a Jupyter notebook inside VSCode.
 
 There are two types of ROOT scripts: the python-based and C++ interpreter based. For the python based script, you should choose the ipykernel and for C++ scripts, you should choose the ROOT C++ kernel, in the Jupyter notebook. 
+![jupyter-kernels](https://github.com/deepaksamuel/ehep-2023/blob/635ae68a17dbc425d6c3bae7a86f64d4d1d65154/img/jupyter-kernels.png "jupyter-kernels")
 
 ### Other ways to install / run ROOT
 - To know more about build ROOT from source and other options, please go to: https://root.cern/install/build_from_source/
