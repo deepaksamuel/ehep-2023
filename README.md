@@ -174,7 +174,7 @@ You should see the ROOT command prompt coming up.
 You must source thisroot.sh every time you open a new terminal. In case you intend to use ROOT frequently, this may be inconvenient. You should instead add this line to your bash.rc file.
 
 ### Running a ROOT Jupyter notebook:
-First make sure that the thisroo.sh script is sourced and execute the following command from the terminal:
+First make sure that the ```thisroot.sh``` script is sourced and execute the following command from the terminal:
 
       root --notebook --no-browser
 
